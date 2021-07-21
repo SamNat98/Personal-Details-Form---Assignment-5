@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        text-align: center;
+        font-size: 25px;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class = "container">
+    <h1>Address Information</h1>
+    <br>
+    <br>
+    <form action="Page3.html">
+
+        <label for="flatno">Flat No</label>
+        <br>
+        <input type="text" id="a1" placeholder="flat no" style="font-size: 20px;">
+        <br>
+        <label for="street">Street Name</label>
+        <br>
+        <input type="text" id="a2" placeholder="street name" style="font-size: 20px;">
+        <br>
+        <label for="pin">PinCode</label>
+        <br>
+        <input type="number" id="a3" placeholder="110XXXX" style="font-size: 20px;">
+        <br>
+        <label for="country">Country</label>
+        <br>
+        <select id="a4" style="font-size: 20px;">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="London">London</option>
+            <option value="New Zealand">New Zealand</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" onclick="page2()" style="font-size: 20px;">Next</button>
+        <br>
+        <br>
+        <button type="button" onclick="history.back()" style="font-size: 20px;">Prev</button>
+     
+        
+        
+
+    </form>
+</div>
+    <script>
+var a,b,c,d;
+function page2(){
+
+    a = document.getElementById("a1").value;
+    b = document.getElementById("a2").value;
+    c = document.getElementById("a3").value;
+    d = document.getElementById("a4").value;
+
+    sessionStorage.setItem("ft",a);
+    sessionStorage.setItem("st",b);
+    sessionStorage.setItem("pc",c);
+    sessionStorage.setItem("co",d);
+}
+ 
+// function page3(){
+
+//     document.getElementById("f1").value = sessionStorage.getItem("fn");
+// }
+
+    </script>
+</body>
+</html>

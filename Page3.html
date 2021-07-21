@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        text-align: center;
+        font-size: 25px;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class = "container">
+    <h1>Contact Information</h1>
+    <br>
+    <br>
+    <form action="Final.html">
+
+        <label for="email">Email Address</label>
+        <br>
+        <input type="text" id="c1" placeholder="abc@domain.com" style="font-size: 20px;">
+        <br>
+        <label for="mobile">Mobile Number</label>
+        <br>
+        <input type="number" id="c2" placeholder="91XXXXXXX" style="font-size: 20px;">
+        <br>
+        <label for="telephone">Telephone Number</label>
+        <br>
+        <input type="number" id="c3" placeholder="324XXXXX" style="font-size: 20px;">
+        <br>
+        <br>
+        <button type="submit" onclick="page3()" style="font-size: 20px;">Next</button>
+        <br>
+        <br>
+        <button type="button" onclick="history.back()" style="font-size: 20px;">Prev</button>
+
+    </form>
+</div>
+    <script>
+
+var a,b,c,d;
+function page3(){
+
+    a = document.getElementById("c1").value;
+    b = document.getElementById("c2").value;
+    c = document.getElementById("c3").value;
+
+    sessionStorage.setItem("ea",a);
+    sessionStorage.setItem("mn",b);
+    sessionStorage.setItem("tn",c);
+
+    //window.history.back();
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        text-align: center;
+        font-size: 25px;
+        
+    }
+    </style>
+    
+</head>
+<body>
+    <div class = "container">
+    <h1>Personal Details</h1>
+    <br>
+    <br>
+    <form action="Page2.html">
+
+        <label for="fname">First Name</label>
+        <br>
+        <input type="text" id="f1" placeholder="first name" style="font-size: 20px;">
+        <br>
+        <label for="lname">First Name</label>
+        <br>
+        <input type="text" id="f2" placeholder="last name" style="font-size: 20px;">
+        <br>
+        <label for="pan">Pan Card No</label>
+        <br>
+        <input type="text" id="f3" placeholder="F9XXXXXX" style="font-size: 20px;">
+        <br>
+        <label for="marital">Marital Status</label>
+        <br>
+        <input type="text" id="f4" placeholder="single/married" style="font-size: 20px;">
+        <br>
+        <br>
+        <button type="submit" onclick="page1()" style="font-size: 20px;">Next</button>
+
+    </form>
+</div>
+
+    <script>
+
+var a,b,c,d;
+function page1(){
+
+    a = document.getElementById("f1").value;
+    b = document.getElementById("f2").value;
+    c = document.getElementById("f3").value;
+    d = document.getElementById("f4").value;
+
+    sessionStorage.setItem("fn",a);
+    sessionStorage.setItem("ln",b);
+    sessionStorage.setItem("pn",c);
+    sessionStorage.setItem("ms",d);
+}
+    </script>
+</body>
+</html>
