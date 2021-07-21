@@ -31,8 +31,3 @@ message => alert("Mail sent Successfully")
 
 }
 
-function bodydata(){
-
-    var arr = `First name :${c1} \n Last Name :${c2} \n Pan Card No :${c3} \n Marital Status :${c4} \n Flat No :${c5} \n Street Name :${c6} \n Pin Code :${c7} \n Country :${c8} \n Email Address :${c9} \n Mobile Number :${c10} \n Telephone :${c11} \n`;
-    return arr;
-}
